@@ -1,0 +1,96 @@
+
+
+.folder {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.folder-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.folder:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.children {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Header styling */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    width: 70%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+/* Report container styling */
+#report-container {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    width: 70%;
+    transition: box-shadow 0.3s ease;
+}
+
+#report-container:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.chart-container {
+    width: 70%;  /* adjust this to your liking */
+    max-width: 800px; /* optional: sets a maximum width */
+    margin: 20px auto;
+}
+
+
+.chart-container:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,11 @@
+*
+!config/
+!server/
+!drift/
+!notifier/
+!exporter/
+!static/
+!main.go
+!go.mod
+!go.sum
+!atlantis-drift-detector
