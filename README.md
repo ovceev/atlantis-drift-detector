@@ -13,12 +13,12 @@ Runs a cronjob plan and draws some plots which can be useful to monitor infrastr
 | `DRIFT_DETECTOR_SLACK_CHANNEL`         | "drift-channel"                                        | Slack channel name                           |
 | `DRIFT_DETECTOR_SLACK_TOKEN`           | "xoxb-xxx"                                             | Slack token                                  |
 
-# Build
+## Build
 ```bash
 docker build -t repo/atlantis-drift-detector .
 ```
 
-# Run
+## Run
 ```bash
 docker run -p 8080:8080 -d repo/atlantis-drift-detector:tag --env ...
 ```
